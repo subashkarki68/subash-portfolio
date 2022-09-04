@@ -6,6 +6,9 @@
     --secondary-color: #ff0047;
     --alabaster: #ecf3e7;
     --black: #000000;
+
+    /* gap between burger menu and header  */
+    --heading-gap: 50px;
 }
 
 html {
@@ -20,27 +23,9 @@ body {
 }
 
 header {
+    margin-top: calc(var(--heading-gap) * 1.2);
     position: relative;
     color: white;
-}
-
-header nav ul {
-    --space: 0.8em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.6em;
-}
-
-header nav ul li {
-    padding: var(--space) 0;
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-header nav ul li:hover {
-    background-color: var(--secondary-color);
 }
 
 .hero-section img {
@@ -157,8 +142,8 @@ header nav ul li:hover {
 }
 
 .learning-skill p {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     line-height: 100px;
     display: inline-block;
     border-radius: 50%;
