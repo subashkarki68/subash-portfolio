@@ -137,12 +137,22 @@
 .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 90vw;
 }
 
 .menu-wrap .menu>div>div>ul>li>a {
     color: inherit;
     text-decoration: none;
     transition: color 0.4s ease;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-wrap .menu>div>div>ul>li>a:hover {
+    text-decoration: underline;
+    text-underline-offset: -150%;
 }
